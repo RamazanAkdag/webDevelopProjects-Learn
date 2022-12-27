@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        font-size: 1.5em;
+      }
+      /*p:first-child {
+        background-color: blue;
+      }
+      p:last-child {
+        background: blue;
+      }
+      p:nth-child(1) {
+        color: red;
+      }
+      p:nth-child(3) {
+        color: blue;
+      }*/
+
+      p:nth-child(even) {
+        /*ciftler*/
+        color: red;
+      }
+      p:nth-child(odd) {
+        /*tekler*/
+        color: blue;
+      }
+      /*n = 0  b = 0      */
+      ul li:nth-child(2n) {
+        color: red;
+      }
+      ul li:nth-child(2n + 1) {
+        color: blue;
+      }
+      ul li:nth-child(n + 4) {
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!--<p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+      veritatis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+      veritatis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+      veritatis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+      veritatis.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo,
+      veritatis.
+    </p>-->
+
+    <ul>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</li>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id?</li>
+    </ul>
+  </body>
+</html>

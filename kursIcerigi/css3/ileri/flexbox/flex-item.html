@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        height: 600px;
+        background: black;
+      }
+      .box {
+        width: 200px;
+        height: 100px;
+
+        border: 1px solid black;
+        margin: 10px;
+        background: white;
+      }
+      .box1 {
+        flex-grow: 1;
+        background: red;
+      }
+      .box2 {
+        flex-grow: 2;
+
+        background: blue;
+      }
+      .box3 {
+        flex-grow: 3;
+        background: green;
+      }
+
+      /*align-self özelliği align items ile tüm kutulara genel atanan degeri herhangi bir kutuya özel olarak verebilmeni sağlar*/
+      /*flex grow özelliği kutuların 3ünün de kapsayıcıyı doldurmasını saglar.her kutu sayfada verilen deger/ verilen degerlerin toplamı kadar yer kaplayarak
+      yerleşir
+      yalnızca 1 kutuya flex grow verilirse boşlukları o kutu dolduracaktır */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+    </div>
+  </body>
+</html>

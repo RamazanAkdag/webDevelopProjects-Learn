@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>order</title>
+    <style>
+      h1 {
+        color: blue !important; /*important yazılırsa alt satırlarda yapılan degisiklikler
+        yapılan ayarı degistiremez*/
+      }
+      #logo {
+        /*css kodları yukaarıdan asagı dogru calısır yani logo id sine sahip
+            element h1 de olsa rengi kırmızı olur cunku daha asagı yazılmıstır
+            kod kunurken ilk mavi olur sonra kırmızı atanır*/
+        color: red;
+      }
+      /*o yuzden css yazarken en genel secicileri ust kısma git gide dallanan
+      alt elementleri asagıya yazmaya dikkat etmeliyiz*/
+      /*sayfaya en son eklenen calısır*/
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>header 1</h1>
+      <h1 id="logo">Logo</h1>
+
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </header>
+    <h1>header 2</h1>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .background {
+        background: url(https://images.pexels.com/photos/12577819/pexels-photo-12577819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+          center center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        align-items: center;
+        padding: 10rem;
+        height: 100vh;
+      }
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        letter-spacing: 2px;
+      }
+      @media (max-width: 500px) {
+        h1 {
+          margin-bottom: 0.5rem;
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <h1>welcome to the site</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ex
+        aliquid placeat cum rerum reiciendis.
+      </p>
+    </div>
+  </body>
+</html>

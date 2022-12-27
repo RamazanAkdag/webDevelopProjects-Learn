@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        height: 600px;
+        background: black;
+      }
+
+      .box {
+        text-align: center;
+        background: #f2f2f2;
+        width: 200px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      /*flex direction row özelliği default olarak ayarlıdır yan yana dizilmesini saglar
+      column özelliği ise alt alta dizilmesini saglar
+      row da iken justify content yatayda dizilimi saglarken column durumunda justify content özelliği dikeyde kınumlandırma saglar
+      align items de aynı bu şekil tersine döner */
+
+      /*justify content özelliği deefault olarak flex start şeklindedir. kapsayıcının sol tarafından dizilime başlatır
+      flex end özelliği ise en sağda bitecek şekilde ayarlar
+      center özelliği tam ortalar
+      space between ilk kutuyu en sola sonuncusunu en sağa aradakileri de boşluklu olacak şekilde ortaya sıralar
+      space evenly ilk kutuyu soldan boşluk bırakarak koyar ve sonraki kutular da aynı miktarda boşluk olacak şekilde dizilir
+      son kutu da yine sağdan aynı miktarda boşlukla koyulur*/
+
+      /*align items strech özelliği default olarak seçilidir bu özellik y ekseninde ayarlama yapar*
+      center özelliği sayfanın y eksenine göre ortasında getirir ve strech özelliği kaldırılırsa contenti kadar yer kaplar */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>article 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="box">
+        <h1>article 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="box">
+        <h1>article 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+
+      <!--kutulara verdigin width ne kadar olursa olsun kapsayıcının flex-wrap in default özelliği nowrap o satıra tüm elementleri sığdırmaya çalışacaktır
+      bundan dolayı width ayarı otomatik olarak küçülecektir. eger sıgmayanı alt satıra almak istiyorsan flex-wrap:wrap; degerini vermelisin-->
+    </div>
+  </body>
+</html>

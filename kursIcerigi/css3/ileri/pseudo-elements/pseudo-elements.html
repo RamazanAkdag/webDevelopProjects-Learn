@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo elements</title>
+    <style>
+      /*pseudo class olusturmak icin 
+        selector:pseudo class{
+
+        }
+        pseudo element olusturmak icin
+        selector::pseudo element{
+
+
+
+        } 
+        
+        */
+      .para1 {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        line-height: 1.5em;
+      }
+      .para1::first-line {
+        color: red;
+      }
+
+      .para1::first-letter {
+        color: blue;
+        font-size: 50px;
+      }
+      /*first line ilk satırı alır
+      first letter ilk harfi alır*/
+
+      .para1::after {
+        content: "paragraf sonrası";
+      }
+      /*para1 classı ogesinin hemen sonrasına uygulanır*/
+
+      .para1::before {
+        content: url(https://seeklogo.com/images/I/instagram-logo-A807AD378B-seeklogo.com.png);
+      }
+      /*para1 classının hemen oncesine uygulanır*/
+    </style>
+  </head>
+  <body>
+    <p class="para1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error voluptates
+      molestiae labore numquam nulla? Voluptas illo repellat porro, deleniti
+      sunt doloribus quam unde harum quo itaque nam corporis dignissimos.
+      Deleniti libero porro, eveniet consequuntur id eum, omnis voluptatum a
+      rerum fugiat illum vitae enim quia quibusdam accusamus? Eligendi fuga
+      molestias aliquid quo veniam corrupti, doloribus ea consequatur voluptatum
+      enim sit excepturi cumque mollitia rerum. Commodi quibusdam nisi qui,
+      reprehenderit cumque deserunt numquam soluta sed laudantium blanditiis!
+      Voluptates ratione minus repudiandae dolores obcaecati ipsum tempore
+      quibusdam consequuntur, itaque ut explicabo cum adipisci, magnam,
+      reiciendis sunt debitis exercitationem deleniti laborum praesentium
+      laboriosam!
+    </p>
+  </body>
+</html>
