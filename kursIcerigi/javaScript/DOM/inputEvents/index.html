@@ -16,29 +16,6 @@
     />
 
     <title>Todo List</title>
-    <!-- <script>
-      //tüm elementleri secme
-      const form = document.querySelector("#todo-form");
-      const todoInput = document.querySelector("#todo");
-      const todoList = document.querySelector(".list-group");
-      const firstCardBody = document.querySelectorAll(".card-body")[0];
-      const scndCardBody = document.querySelectorAll(".card-body")[1];
-      const filter = document.querySelector("#filter");
-      const clearButton = document.querySelector("#clear-todos");
-
-      eventListeners();
-
-      function eventListeners() {
-        //tüm event listenerlar
-        form.addEventListener("submit", addTodo);
-      }
-      function addTodo(e) {
-        const newTodo = todoInput.value.trim();
-        console.log(newTodo);
-
-        e.preventDefault();
-      }
-    </script> -->
   </head>
   <body>
     <div class="container" style="margin-top: 20px">
@@ -59,7 +36,6 @@
             </div>
             <button type="submit" class="btn btn-danger">Todo Ekleyin</button>
           </form>
-          <hr />
         </div>
 
         <div class="card-body">
@@ -72,20 +48,37 @@
                 type="text"
                 name="filter"
                 id="filter"
-                placeholder="bir müşteri ara"
+                placeholder="Bir Todo Arayın"
               />
             </div>
           </div>
 
           <hr />
           <ul class="list-group">
-            <!-- <li class="list-group-item d-flex justify-content-between">
-                            Todo 1
-                            <a href = "#" class ="delete-item">
-                                <i class = "fa fa-remove"></i>
-                            </a>
-
-                        </li>-->
+            <li class="list-group-item d-flex justify-content-between">
+              Todo 1
+              <a href="#" class="delete-item">
+                <i class="fa fa-remove"></i>
+              </a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Todo 2
+              <a href="#" class="delete-item">
+                <i class="fa fa-remove"></i>
+              </a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Todo 3
+              <a href="#" class="delete-item">
+                <i class="fa fa-remove"></i>
+              </a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Todo 4
+              <a href="#" class="delete-item">
+                <i class="fa fa-remove"></i>
+              </a>
+            </li>
           </ul>
           <hr />
           <a id="clear-todos" class="btn btn-dark" href="#"
