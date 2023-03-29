@@ -1,0 +1,7 @@
+{
+  "open-php-html-js-in-browser.customBrowserPath": "C:\\Program Files (x86)\\AVAST Software\\Browser\\Application",
+  "open-php-html-js-in-browser.customHost": "localhost",
+  "open-php-html-js-in-browser.customUrlToOpen": "${fileBasename}",
+  "open-php-html-js-in-browser.documentRootFolder": "D:\\programmerRamoFinallyStarted\\xampp\\htdocs",
+  "open-php-html-js-in-browser.selectedBrowser": "Custom..."
+}

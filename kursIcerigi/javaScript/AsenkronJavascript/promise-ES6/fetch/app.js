@@ -7,3 +7,18 @@ function getTextFile() {
 }
 
 getTextFile();
+
+function getJsonFile() {
+  fetch("exam.json").then((jsonObject) => {
+    console.log(jsonObject.json());
+  });
+}
+getJsonFile();
+
+function getExternalAPI() {
+  fetch("https://api.exchangeratesapi.io/latest")
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch(() => console.error("hata"));
+}
+getExternalAPI();
